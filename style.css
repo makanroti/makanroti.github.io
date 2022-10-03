@@ -1,0 +1,27 @@
+*{
+    background-color: #06283D;
+}
+div{
+    color: #DFF6FF;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.gambar{
+    width: 210px;
+    height: 120px;
+    background-image: url("OIP.jpg");
+    animation-name: pindah;
+    animation-delay: 1ms;
+    animation-timing-function: ease-in;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: 2s;
+    background-size: cover;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+}
+@keyframes pindah {
+    0% {right: 50%;}
+    100% {right: 0%;}
+}
