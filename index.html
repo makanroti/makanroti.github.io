@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Ini</title>
+    <style>
+        /* Import*/
+        @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap');
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #303030;
+        }
+        ul a {
+            text-decoration: none;
+            color: #C6C6C6;
+            transition: color 1s;
+
+        }
+        ul a:hover {
+            color: aquamarine;
+        }
+        .container {
+            width: 100%;
+            display: grid;
+            margin: 10px auto;
+            grid-template-columns: 200px 1.5fr 1.5fr;
+            grid-template-rows: 70px 300px 800px 50px;
+            grid-template-areas: 'kepala kepala kepala'
+                                 'sisi sisi sisi'
+                                 'isi isi isi'
+                                 'kaki kaki kaki';
+            gap: 3px;
+        }
+        .items {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            display: flex;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .kepala {
+            padding: 20px;
+            grid-area: kepala;
+            background-color: #00A97F;
+            font-family: 'Silkscreen', cursive;
+        }
+        .isi {
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            align-items: baseline;
+            grid-area: isi;
+            background-color: #C6C6C6;
+            justify-content: left;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .sisi {
+            justify-content: left;
+            align-items: baseline;
+            font-size: 25px;
+            color: #C6C6C6;
+            grid-area: sisi;
+            background-color: #474554;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .kaki {
+            grid-area: kaki;
+            background-color: #007D5C;
+        }
+
+        /* Responsve Breakpoint */
+        @media screen and (min-width: 576px) {
+        .container {
+            grid-template-areas:
+          'kepala kepala kepala'
+          'sisi isi isi'
+          'sisi isi isi'
+          'kaki kaki kaki';
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items kepala"><h1>Surah Al-Fatihah</h1></div>
+        <div class="items sisi">
+            <ul>
+                <li><a href="">makan</a></li>
+                <li><a href="">ipsum</a></li>
+                <li><a href="">dolor</a></li>
+                <li><a href="">jenggo</a></li>
+                <li><a href="">turu</a></li>
+            </ul>
+        </div>
+        <div class="items isi">
+            <p>Assalamualaikum</p>
+        </div>
+        <div class="items kaki">footer</div>
+    </div>
+</body>
+</html>
